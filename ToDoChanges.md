@@ -54,3 +54,18 @@
 - Updated `styles.css` to set container styles
 - Add PageNotFoundComponent, redirecting there for unknown paths
 - Add attributes to manage active item on navbar
+
+## Step 5
+
+### Lesson
+
+- Add `todo` class
+- Add Todo Service to access API
+- Dependency Injection of services
+
+### Changes
+
+- Added `todos.ts`
+- Added `todo-data.service.ts`
+- Updated `app.module.ts` for HTTP modules
+- Inject `ToDoDataService`
