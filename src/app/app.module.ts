@@ -22,6 +22,11 @@ import { ngIfNotDirective } from './ngIfNot.directive';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ToDoNotesComponent } from './to-do-notes/to-do-notes.component';
 import { TodoEditComponent } from './todo-edit/todo-edit.component';
+import { GetNameComponent } from './getname/getname.component';
+import { StoreModule } from '@ngrx/store';
+import { nameReducer } from './name.reducer';
+import { ShowNameComponent } from './show-name/show-name.component';
+import { NameManagerComponent } from './name-manager/name-manager.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +57,10 @@ import { TodoEditComponent } from './todo-edit/todo-edit.component';
     ngIfNotDirective,
     ToDoNotesComponent,
     TodoEditComponent,
+    // Added for Step 21
+    GetNameComponent,
+    ShowNameComponent,
+    NameManagerComponent
   ],
   imports: [
     BrowserModule,
@@ -60,9 +69,11 @@ import { TodoEditComponent } from './todo-edit/todo-edit.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    // Added for Step 21
+    StoreModule.forRoot({ name: nameReducer })
   ],
   // Added for Step 5
   providers: [TodoDataService],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
