@@ -4,28 +4,34 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { AllTasksComponent } from './all-tasks/all-tasks.component';
 import { Routes } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
+import { LifeCycleContainerComponent } from './life-cycle-container/life-cycle-container.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: TodoListComponent
+    component: TodoListComponent,
   },
   {
     path: 'all-tasks',
-    component: AllTasksComponent
+    component: AllTasksComponent,
   },
   {
     path: 'about',
-    component: AboutComponent
+    component: AboutComponent,
   },
   {
     path: 'contact',
-    component: ContactComponent
+    component: ContactComponent,
+  },
+  // Added for Step 16
+  {
+    path: 'lifecyclecontainer',
+    component: LifeCycleContainerComponent,
   },
   {
     path: '**',
-    component: TodoListComponent
+    component: TodoListComponent,
   },
   {
     path: 'not-found',
@@ -34,5 +40,5 @@ export const routes: Routes = [
   {
     path: '**', // This allows for unaccounted-for routes
     redirectTo: 'not-found'
-  }
+  },
 ];
