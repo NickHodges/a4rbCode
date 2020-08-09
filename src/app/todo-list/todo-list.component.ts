@@ -38,8 +38,20 @@ export class TodoListComponent implements OnInit, OnDestroy {
   }
   // Added for Step 8
   onAddTodo(todo: Todo) {
-      this.subscriptions.add(this.todoDataService.addTodo(todo).subscribe(val => {
-      this.incompletetodos.push(val);
-    }));
+    this.subscriptions.add(
+      this.todoDataService.addTodo(todo).subscribe(val => {
+        this.incompletetodos.push(val);
+      })
+    );
+  }
+  // Added for Step 9
+  makeComplete(todo: Todo) {
+    this.subscriptions.add(
+      this.todoDataService.toggleTodoComplete(todo).subscribe(val => {
+        const index = this.incompletetodos.findIndex(thetodo => thetodo.id === val.id);
+        this.incompletetodos.splice(index, 1);
+        this.completetodos.push(val);
+      })
+    );
   }
 }

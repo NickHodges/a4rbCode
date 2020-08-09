@@ -110,3 +110,14 @@
 - Added AddToDoComponent, with code to input and add
 - Add EventEmitter
 - Add FormsModule to NgModule imports
+
+## Step 9
+
+### Lesson
+
+- Add ability to mark a Todo as done
+
+### Changes
+
+- Added checkbox to mark item complete
+- Added makeComplete method to update Todo
