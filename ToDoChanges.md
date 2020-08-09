@@ -200,3 +200,15 @@
 - Add container component to contain child component
 - Add child component, which will ensure that the View events are fired
 - Add handlers and interface references for all the lifecycle events.
+
+## Step 17
+
+### Lesson
+
+- Create a directive to highlight when mouse hovers over item.
+
+### Changes
+
+- Added highlightOnHover directive
+- Added tags in HTML to make items highlight
+- This article really helped: [https://reactgo.com/angular-custom-directive-example/](https://reactgo.com/angular-custom-directive-example/)

@@ -17,6 +17,7 @@ import { PhoneCharactersOnlyDirective } from './app.directives';
 import { AboutContentComponent } from './about-content/about-content.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { LifeCycleContainerComponent } from './life-cycle-container/life-cycle-container.component';
+import { HighlightOnHoverDirective } from './highlight-on-hover.directive';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
@@ -44,6 +45,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     // Two components below added for Step 16
     LifeCycleComponent,
     LifeCycleContainerComponent,
+    HighlightOnHoverDirective,
   ],
   imports: [
     BrowserModule,

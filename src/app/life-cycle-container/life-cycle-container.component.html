@@ -10,6 +10,11 @@
     <app-life-cycle
       lifecycletext="This is the text for the lifecycletest field"
       *ngIf="showStuff"
-    ></app-life-cycle>
+    >
+      <!-- Added for Step 17 -->
+      <p #paragraphContent>
+        This is paragraph content in the app-life-cycle element.
+      </p>
+    </app-life-cycle>
   </div>
 </div>
