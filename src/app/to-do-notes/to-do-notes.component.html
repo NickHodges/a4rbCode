@@ -1,9 +1,14 @@
 <hr />
 
 <div class="container">
-  <h3>Note for "{{ todo?.title }}"</h3>
+  <div class="row d-flex justify-content-between">
+    <h3>Note for "{{ todo?.title }}"</h3>
+    <button (click)="onEditNote()" class="btn btn-outline-primary float-right">
+      Edit &#x270e;
+    </button>
+  </div>
 </div>
 
 <div class="container" id="green-corners">
-  <p>{{ todo?.note }}</p>
+  <textarea id="styled" rows="6" disabled readonly>{{ todo?.note }}</textarea>
 </div>
