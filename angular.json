@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PhillyCCTodo": {
+    "NickTodo": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,17 +13,29 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/PhillyCCTodo",
+            "aot": true,
+            "outputPath": "dist/NickTodo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.css"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -45,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "PhillyCCTodo:build"
+            "browserTarget": "NickTodo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "PhillyCCTodo:build:production"
+              "browserTarget": "NickTodo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "PhillyCCTodo:build"
+            "browserTarget": "NickTodo:build"
           }
         },
         "test": {
@@ -66,21 +78,31 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
-            "styles": ["src/styles.css"],
+            "styles": [
+              "src/styles.css"
+            ],
             "scripts": [],
-            "assets": ["src/favicon.ico", "src/assets"]
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ]
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["src/tsconfig.app.json", "src/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**"]
+            "tsConfig": [
+              "src/tsconfig.app.json",
+              "src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
     },
-    "PhillyCCTodo-e2e": {
+    "NickTodo-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -88,11 +110,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "PhillyCCTodo:serve"
+            "devServerTarget": "NickTodo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "PhillyCCTodo:serve:production"
+              "devServerTarget": "NickTodo:serve:production"
             }
           }
         },
@@ -100,14 +122,16 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
     }
   },
-  "defaultProject": "PhillyCCTodo",
+  "defaultProject": "NickTodo",
   "cli": {
-    "analytics": "ee64fcda-5e0b-4e22-924f-8b4584dd37e7"
+    "analytics": "3b66c8d2-eaf8-413b-a0d8-c418dd94c0a5"
   }
 }
