@@ -28,4 +28,10 @@ export class TodoDataService {
   incompletedTodos(): Observable<Array<Todo>> {
     return this.aHttpService.get<Array<Todo>>(`${this.rootURL}?complete=false`);
   }
+
+  // Added for Step 8
+  // Create/Post todo
+  addTodo(todo: Todo): Observable<Todo> {
+    return this.aHttpService.post<Todo>(`${this.rootURL}`, todo);
+  }
 }
