@@ -166,3 +166,14 @@
 - Perform basic validation in code
 - Submit form to the console
 - Only enable submit button if form is valid
+
+## Step 14
+
+### Lesson
+
+- How to create a directive
+
+### Changes
+
+- Added directive to prevent bad input for telephone numbers
+- Added set of useful constants for the telephone number directive
