@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoDataService } from '../todo-data.service';
+import { Todo } from '../todo';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-all-tasks',
@@ -8,6 +10,11 @@ import { TodoDataService } from '../todo-data.service';
 })
 export class AllTasksComponent implements OnInit {
   constructor(private todoDataService: TodoDataService) {}
+  // Added for Step 6
+  allTodos: Observable<Array<Todo>>;
 
-  ngOnInit() {}
+  ngOnInit() {
+    // Added for Step 6
+    this.allTodos = this.todoDataService.getAllTodos();
+  }
 }
