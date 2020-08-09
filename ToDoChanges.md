@@ -121,3 +121,14 @@
 
 - Added checkbox to mark item complete
 - Added makeComplete method to update Todo
+
+## Step 10
+
+### Lesson
+
+- Add abilty to mark complete Todo as uncomplete.
+
+### Changes
+
+- Add `onclick`
+- Add function to mark a Todo incomplete
