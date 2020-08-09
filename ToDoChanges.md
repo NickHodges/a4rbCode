@@ -99,17 +99,14 @@
 
 ## Step 8
 
-### Lesson
-
-- Add a component to add Todos
-- Display component in Todo checklist page
-- Add EventEmitter to notify lists that things have changed
+### Lessons
 
 ### Changes
 
-- Added AddToDoComponent, with code to input and add
-- Add EventEmitter
-- Add FormsModule to NgModule imports
+- Added `todos.ts`
+- Added `todo-data.service.ts`
+- Updated `app.module.ts` for HTTP modules
+- Inject `ToDoDataService`
 
 ## Step 9
 
@@ -142,3 +139,15 @@
 
 - Added big red 'X' to delete a Todo item
 - Add `removeTodo` to delete a todo entirely
+
+## Step 12
+
+### Lesson
+
+- Add ability to edit an incomplete todo in place
+
+### Changes
+
+- update HTML to add an input box when you click on an item
+- Code to update the text of an incomplete todo
+- Added HttpParams to query for complete/incomplete

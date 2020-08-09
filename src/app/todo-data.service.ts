@@ -1,7 +1,7 @@
 // This file was added in Step 5
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Todo } from './todo';
 
 @Injectable() // Injectable needed here because we are injecting into this service
