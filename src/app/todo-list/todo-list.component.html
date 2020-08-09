@@ -16,8 +16,12 @@
             {{ todo.title }}
             <input #editInput *ngIf="todo.editMode" [value]="todo.title" (keyup.enter)="updateTodo(todo, editInput)" class="edit-todo" type="text" />
           </span>
-          <!-- Added for Step 11 -->
-          <button (click)="removeTodo(todo)" class="btn btn-danger delete-todo">
+          <!-- Added for Step 11, changed for Step 18 -->
+          <button
+            *ngIfNot="dontShowDeleteButton"
+            (click)="removeTodo(todo)"
+            class="btn btn-danger delete-todo"
+          >
             &#x2715;
           </button>
         </li>

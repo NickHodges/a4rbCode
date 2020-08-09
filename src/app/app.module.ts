@@ -18,6 +18,7 @@ import { AboutContentComponent } from './about-content/about-content.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { LifeCycleContainerComponent } from './life-cycle-container/life-cycle-container.component';
 import { HighlightOnHoverDirective } from './highlight-on-hover.directive';
+import { ngIfNotDirective } from './ngIfNot.directive';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
@@ -46,6 +47,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     LifeCycleComponent,
     LifeCycleContainerComponent,
     HighlightOnHoverDirective,
+    ngIfNotDirective,
   ],
   imports: [
     BrowserModule,
