@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-button.delete-todo {
+button.todo-button {
   margin-left: auto;
   width: 25px;
   padding: 0;

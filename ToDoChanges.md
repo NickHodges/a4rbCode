@@ -93,7 +93,7 @@
 ### Changes
 
 - Added completed/incompleted methods to Todo page and to DataService
-- Use of *ngIf
+- Use of \*ngIf
 - Updated HTML to display Todos
 - Subscription to track Observables
 
@@ -223,3 +223,17 @@
 
 - Create a new directive called `ngIfNot`
 - Add directive to HTML
+
+## Step 19
+
+### Lesson
+
+- Add ability to display note.
+- Illustrate child routes
+- Create new component to handle displaying note
+
+### Changes
+
+- Add `note` field to Todo class
+- Add `getTodoById` to the data service
+- Add child paths to routes

@@ -53,4 +53,9 @@ export class TodoDataService {
   deleteTodoById(id: number): Observable<Todo> {
     return this.aHttpService.delete<Todo>(`${this.rootURL}/${id}`);
   }
+
+  // Added for Step 19
+  getTodoById(todoid: string): Observable<Todo> {
+    return this.aHttpService.get<Todo>(`${this.rootURL}/${todoid}`);
+  }
 }
