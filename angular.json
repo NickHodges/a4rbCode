@@ -144,6 +144,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "a4rbCode"
+    }
+  },
+  "defaultProject": "a4rbCode",
+  "cli": {
+    "analytics": "332f4daa-9b4c-482c-b0e4-5aa99eb8d2bf"
+  }
 }
