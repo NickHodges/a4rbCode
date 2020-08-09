@@ -151,3 +151,18 @@
 - update HTML to add an input box when you click on an item
 - Code to update the text of an incomplete todo
 - Added HttpParams to query for complete/incomplete
+
+## Step 13
+
+### Lesson
+
+- Add Contact form with basic validation
+
+
+### Changes
+
+- Add HTML contact form
+- Add controls in Typescript
+- Perform basic validation in code
+- Submit form to the console
+- Only enable submit button if form is valid
