@@ -158,7 +158,6 @@
 
 - Add Contact form with basic validation
 
-
 ### Changes
 
 - Add HTML contact form
@@ -177,3 +176,15 @@
 
 - Added directive to prevent bad input for telephone numbers
 - Added set of useful constants for the telephone number directive
+
+## Step 15
+
+### Lesson
+
+- Introduce the notion of ng-content
+
+### Changes
+
+- Added component that uses the ng-content tag
+- Added tags to make it all work
+  Added "select" attribute to illustrate how you can customize content
