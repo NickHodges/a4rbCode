@@ -1,4 +1,4 @@
-cd \code\NewAngularToDo
+cd \code\a4rbCode
 
 git checkout Step1
 git commit -m "Automerge"
