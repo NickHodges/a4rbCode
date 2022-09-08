@@ -99,14 +99,17 @@
 
 ## Step 8
 
-### Lessons
+### Lesson
+
+- Add a component to add Todos
+- Display component in Todo checklist page
+- Add EventEmitter to notify lists that things have changed
 
 ### Changes
 
-- Added `todos.ts`
-- Added `todo-data.service.ts`
-- Updated `app.module.ts` for HTTP modules
-- Inject `ToDoDataService`
+- Added AddToDoComponent, with code to input and add
+- Add EventEmitter
+- Add FormsModule to NgModule imports
 
 ## Step 9
 
