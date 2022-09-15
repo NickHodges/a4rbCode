@@ -20,6 +20,4 @@
 
 ### Changes
 
-- Install json-server in Heroku
-- Follow instructions at: https://github.com/jesperorb/json-server-heroku
-- It's all free.
+- Install json-server
