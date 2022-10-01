@@ -1,0 +1,5 @@
+/* Added in Step 3 */
+.navbar {
+  /* What the docs use */
+  --bs-navbar-padding-x: 0.5rem;
+}
